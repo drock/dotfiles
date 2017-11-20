@@ -1,0 +1,1 @@
+alias gpg-export="gpg --armor --export | pbcopy"
