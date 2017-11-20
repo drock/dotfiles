@@ -1,0 +1,4 @@
+#!/bin/sh
+
+openssl rand -hex 32 | pbcopy
+echo 'random password copied to clipboard'
