@@ -1,0 +1,1 @@
+alias pdeis="DEIS_PROFILE=prod deis"
