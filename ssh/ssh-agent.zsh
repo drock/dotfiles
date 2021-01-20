@@ -11,9 +11,9 @@
 #NOTE: I haven't yet figured out how to automate the setup of the launchctl stuff so that is manually done for now
 
 # Discover the running ssh-agent started by launchd
-export SSH_AGENT_PID=$(pgrep -U $USER ssh-agent)
-if [ -n "$SSH_AGENT_PID" ]; then
-    export SSH_AUTH_SOCK=$(lsof -U -a -p $SSH_AGENT_PID -F n | grep '^n/' | cut -c2-)
-else
-    echo "No running ssh-agent found.  Check your launchd service."
-fi
+#export SSH_AGENT_PID=$(pgrep -U $USER ssh-agent)
+#if [ -n "$SSH_AGENT_PID" ]; then
+#    export SSH_AUTH_SOCK=$(lsof -U -a -p $SSH_AGENT_PID -F n | grep '^n/' | cut -c2-)
+#else
+#    echo "No running ssh-agent found.  Check your launchd service."
+#fi

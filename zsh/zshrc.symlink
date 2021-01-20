@@ -47,4 +47,7 @@ autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+bindkey "^[[B" down-line-or-beginning-search # Downexport OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # added by crucible
+alias start_zookeeper_server='sudo /usr/local/confluent/bin/zookeeper-server-start /usr/local/confluent/etc/kafka/zookeeper.properties # added by crucible' # added by crucible
+alias start_kafka_server='sudo /usr/local/confluent/bin/kafka-server-start /usr/local/confluent/etc/kafka/server.properties # added by crucible' # added by crucible
+alias start_schema_registry_server='sudo /usr/local/confluent/bin/schema-registry-start /usr/local/confluent/etc/kafka/schema-registry.properties' # added by crucible
